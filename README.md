@@ -1,2 +1,2 @@
 # MobilityDB-BerlinMOD-Hanoi
-MobilityDB-BerlinMOD instantiated with Hanoi (Vietnam) data from OSM
+MobilityDB-BerlinMOD instantiated with data from Hanoi (Vietnam) obtained from OSM
