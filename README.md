@@ -80,6 +80,9 @@ psql -h localhost -p 5432 -U dbowner -d hanoi \
 
 | Scale Factor | Vehicles | Days | Trips | File | Size |
 |--------------|---------:|-----:|------:|-----|-----:|
+| SF 0.001 |   63  | 3 |  549   | [hanoi_sf0.001.zip](https://drive.google.com/file/d/1PPgMNhqjIrywqi0ptpMr-z4vIguynrPN/view?usp=drive_link) | 43.4 MB  |
+| SF 0.002 |   89  | 3 |  758   | [hanoi_sf0.002.zip](https://drive.google.com/file/d/1mR1_7wKH7fSgRfPo0dBK8Ga3HJ0SQSq1/view?usp=drive_link) | 59.7 MB  |
+| SF 0.005 |   141 | 4 |  1,620 | [hanoi_sf0.005.zip](https://drive.google.com/file/d/1SISU7Rvle0Ale9Lcxv1XcwRU6JLi3mYb/view?usp=drive_link) | 122.2 MB |
 | SF 0.01 |   200 | 5 |  2,903 | [hanoi_sf0.01.zip](https://drive.google.com/file/d/1RArXgQXg3uz7I-zSxJs0_NpyQEOLmP02/view?usp=drive_link) | 214.6 MB |
 | SF 0.02 |   283 | 6 |  4,641 | [hanoi_sf0.02.zip](https://drive.google.com/file/d/1dqubMjWCY_EsTs7yega5zhSSVGk8cmYS/view?usp=drive_link) | 310.4 MB |
 | SF 0.05 |   447 | 8 |  9,491 | [hanoi_sf0.05.zip](https://drive.google.com/file/d/1Qxde4sn85d773PBLMLnI7WZeF4z2X_3B/view?usp=drive_link) | 626.6 MB |
