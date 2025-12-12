@@ -27,8 +27,13 @@ BBOX="105.28,20.56,106.07,21.384"
 wget -O "${CITY}.osm" "http://www.overpass-api.de/api/xapi?*[bbox=${BBOX}][@meta]"
 ```
 
-Create database hanoi, and add all extension needed:
+Clone the repository:
+```bash
+git clone --recurse-submodules https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi.git
+cd MobilityDB-BerlinMOD-Hanoi
+```
 
+Create database hanoi, and add all extension needed:
 ```bash
 # in a console:
 createdb -h localhost -p 5432 -U dbowner hanoi
@@ -80,13 +85,16 @@ psql -h localhost -p 5432 -U dbowner -d hanoi \
 
 | Scale Factor | Vehicles | Days | Trips | File | Size |
 |--------------|---------:|-----:|------:|-----|-----:|
-| SF 0.001 |   63  | 3 |  549   | [hanoi_sf0.001.zip](https://drive.google.com/file/d/1PPgMNhqjIrywqi0ptpMr-z4vIguynrPN/view?usp=drive_link) | 43.4 MB  |
-| SF 0.002 |   89  | 3 |  758   | [hanoi_sf0.002.zip](https://drive.google.com/file/d/1mR1_7wKH7fSgRfPo0dBK8Ga3HJ0SQSq1/view?usp=drive_link) | 59.7 MB  |
-| SF 0.005 |   141 | 4 |  1,620 | [hanoi_sf0.005.zip](https://drive.google.com/file/d/1SISU7Rvle0Ale9Lcxv1XcwRU6JLi3mYb/view?usp=drive_link) | 122.2 MB |
-| SF 0.01 |   200 | 5 |  2,903 | [hanoi_sf0.01.zip](https://drive.google.com/file/d/1RArXgQXg3uz7I-zSxJs0_NpyQEOLmP02/view?usp=drive_link) | 214.6 MB |
-| SF 0.02 |   283 | 6 |  4,641 | [hanoi_sf0.02.zip](https://drive.google.com/file/d/1dqubMjWCY_EsTs7yega5zhSSVGk8cmYS/view?usp=drive_link) | 310.4 MB |
-| SF 0.05 |   447 | 8 |  9,491 | [hanoi_sf0.05.zip](https://drive.google.com/file/d/1Qxde4sn85d773PBLMLnI7WZeF4z2X_3B/view?usp=drive_link) | 626.6 MB |
-| SF 0.1  |   632 | 11 | 18,910 | [hanoi_sf0.1.zip](https://drive.google.com/file/d/1LvNxDHbTmXHfALpuJzLOCuN8VUj3sOua/view?usp=drive_link) | 1.27 GB |
+| SF 0.001 |   63  | 3 |  549   | [hanoi_sf0.001.zip](https://drive.google.com/file/d/1qXMZjtqN-9fzv0YV6OQWHUCMEkQdPdW6/view?usp=drive_link) | 114.1 MB  |
+| SF 0.002 |   89  | 3 |  758   | [hanoi_sf0.002.zip](https://drive.google.com/file/d/1a9UE57xue8jAIPrMhLfvFkHxg4z5g7dg/view?usp=drive_link) | 121.5 MB  |
+| SF 0.005 |   141 | 4 |  1,620 | [hanoi_sf0.005.zip](https://drive.google.com/file/d/1eSQE-6J0gBtgxi6CG7S88vLH7_GQ0Y3N/view?usp=drive_link) | 190.2 MB |
+| SF 0.01 |   200 | 5 |  2,903 | [hanoi_sf0.01.zip](https://drive.google.com/file/d/1m2-Uo-sdRxDR_qh7JhbW2Vso86OugX3J/view?usp=drive_link) | 294.5 MB |
+| SF 0.02 |   283 | 6 |  4,641 | [hanoi_sf0.02.zip](https://drive.google.com/file/d/1uSdHOue08rGJ0wJmAnePrqPutUtIBTma/view?usp=drive_link) | 401.3 MB |
+| SF 0.05 |   447 | 8 |  9,491 | [hanoi_sf0.05.zip](https://drive.google.com/file/d/1gxSPgp1jf9vGd7SeWm_WPzSz71PLcOqu/view?usp=drive_link) | 716.5 MB |
+| SF 0.1  |   632 | 11 | 18,910 | [hanoi_sf0.1.zip](https://drive.google.com/file/d/1HOu7QbWKgXMfuebVt0bXHhLovgi7E8xz/view?usp=drive_link) | 1.37 GB |
+| SF 0.2 |   894 | 15 |  35,319 | [hanoi_sf0.2.zip](https://drive.google.com/file/d/1Q1UUkrevSpVvtksPOis3ff1iHthOhuD7/view?usp=drive_link) | 2.42 GB |
+| SF 0.5 |   1414 | 22 | 81,584 | [hanoi_sf0.5.zip](https://drive.google.com/file/d/1J-7b8cUmD-pA08RJ-GuOoGlS1bUyvySe/view?usp=drive_link) | 5.53 GB|
+
 
 Trips geoJSON file: [trips_2020-06-01.geojson](https://drive.google.com/file/d/1ufBxG5fxA3d3GZpcf2ZTmUjn6rGfhjoE/view?usp=drive_link) (All synthetic trips in Hanoi in 2020-06-01 with scale of 0.001)
 
